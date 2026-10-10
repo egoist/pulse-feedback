@@ -1,0 +1,26 @@
+name: Bug
+description: Something in Pulse doesn't work, or shows the wrong thing.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you saw, and what you expected. A screenshot helps.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Pulse version
+      description: Pulse → About Pulse.
+      placeholder: "0.1.2"
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: System
+      placeholder: macOS 26 on a MacBook Air (M4), Windows 11 on Arm, Ubuntu 24.04…
+    validations:
+      required: true
